@@ -1,10 +1,9 @@
 pipeline {
   agent none
   stages {
-    stage('error') {
+    stage('') {
       steps {
-        pwd()
-        sleep 1
+        writeFile(file: 'x', text: 'xx')
       }
     }
   }
