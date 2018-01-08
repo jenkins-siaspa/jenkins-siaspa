@@ -1,9 +1,9 @@
 pipeline {
   agent none
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        pwd(tmp: true)
+        pwd()
         fileExists 'A2.txt'
         sleep 1
       }
